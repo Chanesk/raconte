@@ -1,0 +1,12 @@
+@import '../../styles.scss';
+.landing{
+    padding: 0px 80px;
+    &__cover{
+        &__title{
+            @include heading;
+            text-align: center;
+            margin: 48px 0px 20px 0px;
+        }
+
+    }
+}
