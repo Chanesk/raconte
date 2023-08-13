@@ -32,6 +32,7 @@ $mobil:600px;
 @mixin heading($size:$size-heading, $font:$typographie, $color:$color-primary){
     font-size: $size;
     font-family: $font;
+    color: $color;
 }
 @mixin title($size:$size-title, $font:$typographie, $color:$color-primary){
     font-size: $size;
@@ -45,6 +46,7 @@ $mobil:600px;
 @mixin body($size:$size-body, $font:$typo-sec, $color:$color-primary){
     font-size: $size;
     font-family: $font;
+    color: $color;
 }
 @mixin link($size:$size-link, $font:$typographie, $color:$color-primary){
     font-size: $size;
