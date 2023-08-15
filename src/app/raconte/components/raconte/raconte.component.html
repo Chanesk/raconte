@@ -1,1 +1,16 @@
-<p></p>
+<div class="article">
+    <div class="article__img">
+        <img [src]="raconte.attributes.image" alt="">
+    </div>
+    <p>{{raconte.attributes.category.data.attributes.name}} - {{raconte.attributes.createdDate | date: 'd MMMM yyyy'}}</p>
+    <div class="article__content">
+        <div class="article__content__text">
+            <h3>{{raconte.attributes.title}}</h3>
+            <p >{{raconte.attributes.content | truncate:[220]}}</p>
+            <button>bonjour</button>
+        </div>
+        <div class="article__content_icon">
+           <fa-icon [icon]="icon"></fa-icon> 
+        </div>
+    </div>
+</div>

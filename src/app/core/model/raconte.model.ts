@@ -1,8 +1,25 @@
 export class Raconte {
-    id!: number;
-    title!:string;
-    image!:string;
-    content!:string;
-    author!:string;
-    date!: Date;
+  id!: number;
+  attributes!: {
+    category: {
+        data:{
+            id: number;
+            attributes: {
+              name: string;
+            };
+        }
+    };
+    title: string;
+    image: string;
+    content: string;
+    createdDate: Date;
+    users_permissions_user:{
+        data:{
+            id:number,
+            attributes:{
+                name:string
+            }
+        }
+    }
+  };
 }

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RaconteComponent } from './components/raconte/raconte.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { RaconteListComponent } from './components/raconte-list/raconte-list.component';
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { TruncatePipe } from '../truncate.pipe';
 
 
 
@@ -11,12 +13,14 @@ import { RaconteListComponent } from './components/raconte-list/raconte-list.com
     RaconteComponent,
     SubscribeComponent,
     RaconteListComponent,
+    TruncatePipe
   ],
   imports: [
     CommonModule,
+    FontAwesomeModule
   ], 
   exports:[
-    RaconteComponent,
+    RaconteListComponent,
     SubscribeComponent
   ]
 })
