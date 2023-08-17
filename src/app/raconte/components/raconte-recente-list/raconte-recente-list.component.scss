@@ -1,0 +1,13 @@
+.recente{
+    display: flex;
+    gap: 40px;
+    &__first{
+        width: 50%;
+    }
+    &__second{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../../../styles.scss';
+.article{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    &__img>img{
+        height: 170px;
+        width: 250px;
+        object-fit: cover;
+    }
+    &__info{
+        margin: 0px;
+        @include subtitle;
+    }
+    &__content{
+        &>h3{
+            @include link;
+            margin: 10px 0px;
+        }
+        &__text{
+            @include subtitle;
+            margin: 10px 0px;
+        }
+        &>div{
+            @include buttonCat;
+            margin-top: 20px;
+        }
+    }
+
+}

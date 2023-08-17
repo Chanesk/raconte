@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map, tap } from 'rxjs';
 import { Raconte } from 'src/app/core/model/raconte.model';
 import { raconteService } from 'src/app/core/service/racontes.service';
 
@@ -9,14 +9,11 @@ import { raconteService } from 'src/app/core/service/racontes.service';
   styleUrls: ['./raconte-list.component.scss']
 })
 export class RaconteListComponent implements OnInit{
-  raconte$!: Observable<Raconte[]>;
-
+  raconte$!: Observable<Raconte[]>
   constructor(private raconteService: raconteService){}
 
   ngOnInit(): void {
-    this.raconte$= this.raconteService.getAllRacontes();
-    this.raconte$.subscribe(value =>console.log(value)
-    )
+   this.raconte$ =this.raconteService.getAllRacontes();
   }
 
 }

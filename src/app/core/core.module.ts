@@ -5,17 +5,22 @@ import { HeaderComponent } from './components/header/header.component';
 import * as fr from '@angular/common/locales/fr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http'
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent
+  ],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR' },

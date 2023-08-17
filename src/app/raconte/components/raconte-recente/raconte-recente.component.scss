@@ -1,0 +1,47 @@
+@import '../../../../styles.scss';
+.article{
+    width: 100%;
+    &__img>img{
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    }
+    &__info{
+        @include body;
+        margin: 10px 0px 0px 0px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 30px;
+        margin-top: 20px;
+        &__text{
+            width: 95%;
+            &>h3{
+                margin: 0px;
+                @include link;
+            }
+            &>p{
+                @include body;
+                margin-top: 10px;
+            }
+            &>div{
+                border: 1px solid $color-secondary;
+                border-radius: 20px;
+                background-color: $color-white;
+                @include subtitle;
+                width: 60px;
+                text-align: center;
+                padding: 4px 8px;
+            }
+        }
+        &__icon{
+            width: 5%;
+            &__arrow{
+                font-size: 22px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
