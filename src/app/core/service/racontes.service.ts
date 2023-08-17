@@ -12,7 +12,6 @@ export class raconteService{
     getAllRacontes():Observable<any>{
         return this.http
           .get<any>('http://localhost:1337/api/articles?populate=*')
-          .pipe(map((value) => value.data),tap(console.log
-          ));
+          .pipe(map((value) => value.data))
     }
 }

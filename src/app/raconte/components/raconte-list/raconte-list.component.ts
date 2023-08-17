@@ -11,11 +11,9 @@ import { raconteService } from 'src/app/core/service/racontes.service';
 export class RaconteListComponent implements OnInit{
   raconte$!: Observable<Raconte[]>
   constructor(private raconteService: raconteService){}
-  test!: Array<any>
+
   ngOnInit(): void {
    this.raconte$ =this.raconteService.getAllRacontes();
-   console.log(this.raconte$);
-    
   }
 
 }

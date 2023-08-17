@@ -10,7 +10,7 @@ import { LandingPageComponent } from './landing-page.component';
   ],
   imports: [
     CommonModule,
-    RaconteModule
+    RaconteModule,
   ],
   exports:[
     LandingPageComponent

@@ -17,7 +17,7 @@ export class Raconte {
         data:{
             id:number,
             attributes:{
-                name:string
+                username:string
             }
         }
     }
