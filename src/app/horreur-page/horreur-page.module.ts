@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { HorreurPageComponent } from './components/horreur/horreur-page.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [HorreurPageComponent],
+  imports: [CommonModule],
+  exports: [HorreurPageComponent],
 })
-export class HorreurPageModule { }
+export class HorreurPageModule {}

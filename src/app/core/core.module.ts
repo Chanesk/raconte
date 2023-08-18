@@ -6,6 +6,7 @@ import * as fr from '@angular/common/locales/fr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http'
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CommonModule,
     FontAwesomeModule,
     HttpClientModule,
+    RouterModule
   ],
   exports:[
     HeaderComponent,
