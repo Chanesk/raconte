@@ -12,17 +12,17 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR' },
