@@ -1,4 +1,4 @@
-<div class="article" (click)="onViewRaconte()">
+<div class="article" *ngIf="raconte.attributes.category.data.attributes.name === 'reality'" (click)="onViewRaconte()">
     <div class="article__img">
         <img [src]="raconte.attributes.image" alt="">
     </div>

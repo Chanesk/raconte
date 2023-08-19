@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
-import { Raconte } from 'src/app/core/model/raconte.model';
+import { Component,Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { Raconte } from 'src/app/core/model/raconte.model';
 
 
 @Component({
@@ -10,5 +11,10 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 })
 export class FictionArticleComponent {
   @Input() raconte!: Raconte;
+  constructor(private router: Router) {}
+
   icon = faArrowUpRightFromSquare;
+  onViewRaconte() {
+    this.router.navigateByUrl(`fiction/${this.raconte.id}`);
+  }
 }

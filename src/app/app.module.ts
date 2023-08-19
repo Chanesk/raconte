@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { HorreurPageModule } from './horreur-page/horreur-page.module';
 import { FictionModule } from './fiction/fiction.module';
+import { ReelModule } from './reel/reel.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FictionModule } from './fiction/fiction.module';
     CoreModule,
     LandingPageModule,
     HorreurPageModule,
-    FictionModule
+    FictionModule,
+    ReelModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
