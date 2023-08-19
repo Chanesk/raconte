@@ -6,21 +6,23 @@ import * as fr from '@angular/common/locales/fr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http'
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     HttpClientModule,
+    RouterModule,
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR' },

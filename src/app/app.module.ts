@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { HorreurPageModule } from './horreur-page/horreur-page.module';
@@ -16,7 +14,6 @@ import { HorreurPageModule } from './horreur-page/horreur-page.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FontAwesomeModule,
     LandingPageModule,
     HorreurPageModule
   ],
