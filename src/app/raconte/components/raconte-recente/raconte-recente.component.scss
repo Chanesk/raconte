@@ -1,6 +1,7 @@
 @import '../../../../styles.scss';
 .article{
     width: 100%;
+    cursor: pointer;
     &__img>img{
     height: 360px;
     width: 100%;

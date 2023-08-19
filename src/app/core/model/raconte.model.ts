@@ -17,7 +17,9 @@ export class Raconte {
         data:{
             id:number,
             attributes:{
-                username:string
+                username:string,
+                descriptio: string,
+                imgUrl: string,
             }
         }
     }

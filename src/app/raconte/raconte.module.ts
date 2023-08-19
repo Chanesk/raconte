@@ -8,6 +8,7 @@ import { RaconteRecenteComponent } from './components/raconte-recente/raconte-re
 import { RaconteRecenteListComponent } from './components/raconte-recente-list/raconte-recente-list.component';
 import { RaconteThirdRecenteComponent } from './components/raconte-third-recente/raconte-third-recente.component';
 import { DependanceModule } from '../dependance/dependance.module';
+import { SingleRaconteComponent } from './components/single-raconte/single-raconte.component';
 
 
 
@@ -18,7 +19,8 @@ import { DependanceModule } from '../dependance/dependance.module';
     RaconteListComponent,
     RaconteRecenteComponent,
     RaconteRecenteListComponent,
-    RaconteThirdRecenteComponent
+    RaconteThirdRecenteComponent,
+    SingleRaconteComponent
   ],
   imports: [
     CommonModule,
