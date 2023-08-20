@@ -3,15 +3,15 @@
         <div class="connect__content__img">
             <img src="../../../../assets/images/Raconte-fotor-20230810173821-removebg-preview.png" alt="raconte logo">
         </div>
-            <form class="connect__content__form">
+            <form class="connect__content__form" [formGroup]="raconteForm">
                 <h3>Bienvenue</h3>
                 <div class="connect__content__box">
-                    <input type="email" placeholder="Entrez ton email">
+                    <input type="email" placeholder="Entrez ton email" formControlName="email">
                 </div>
                 <div class="connect__content__box">
-                    <input type="password" placeholder="Entrez ton mot de passe">
+                    <input type="password" placeholder="Entrez ton mot de passe" formControlName="password">
                 </div>
-                <button>Se connecter</button>
+                <button type="submit" (click)="onSubmitUser()">Se connecter</button>
             </form>
     </div>
     <div class="connect__cover">

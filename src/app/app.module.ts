@@ -7,6 +7,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 import { HorreurPageModule } from './horreur-page/horreur-page.module';
 import { FictionModule } from './fiction/fiction.module';
 import { ReelModule } from './reel/reel.module';
+import { SeconnecterModule } from './seconnecter/seconnecter.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ReelModule } from './reel/reel.module';
     HorreurPageModule,
     FictionModule,
     ReelModule,
+    SeconnecterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
