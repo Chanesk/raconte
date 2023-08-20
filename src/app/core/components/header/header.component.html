@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" *ngIf="(current$ | async) !=='/seconnecter'">
     <img src="../../../../assets/images/Raconte-fotor-20230810173821-removebg-preview.png" alt="raconte-logo">
     <nav class="navigation">
         <ul class="navigation__list">
@@ -7,7 +7,7 @@
             <li class="navigation__list__element"><a routerLink="fiction">Fiction</a></li>
             <li class="navigation__list__element"><a routerLink="reel">Réel</a></li>
         </ul>
-        <button class="navigation__btn">Se connecter</button>
+        <button class="navigation__btn" (click)="onSeconnecter()">Se connecter</button>
     </nav>
     <fa-icon [icon]="icon" class="header__icon" (click)="toggleDisplayNav()" *ngIf="isShowNav === true"></fa-icon>
     <fa-icon [icon]="faXmark" class="header__icon" (click)="toggleDisplayNav()" *ngIf="isShowNav === false"></fa-icon>
