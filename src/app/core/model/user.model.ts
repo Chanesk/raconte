@@ -1,6 +1,8 @@
 export class User {
-    id!:number;
+    id?:number;
     username!: string;
     email!:string;
-    
+    description?:string;
+    imgUrl?:string;
+    password?:string; 
 }
