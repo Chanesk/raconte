@@ -15,6 +15,6 @@ export class HorreurArticleComponent {
 
   icon = faArrowUpRightFromSquare;
   onViewRaconte() {
-    this.router.navigateByUrl(`horror/${this.raconte.id}`);
+    this.router.navigateByUrl(`horreur/${this.raconte.id}`);
   }
 }

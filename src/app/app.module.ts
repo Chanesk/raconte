@@ -4,10 +4,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
-import { HorreurPageModule } from './horreur-page/horreur-page.module';
-import { FictionModule } from './fiction/fiction.module';
-import { ReelModule } from './reel/reel.module';
-import { SeconnecterModule } from './seconnecter/seconnecter.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +14,6 @@ import { SeconnecterModule } from './seconnecter/seconnecter.module';
     AppRoutingModule,
     CoreModule,
     LandingPageModule,
-    HorreurPageModule,
-    FictionModule,
-    ReelModule,
-    SeconnecterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

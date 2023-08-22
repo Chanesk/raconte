@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable, map, pipe } from 'rxjs';
-import { User } from 'src/app/core/model/user.model';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/core/service/token.service';
 import { UserService } from 'src/app/core/service/users.service';
 
 @Component({
@@ -17,7 +17,9 @@ export class SeconnecterComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private userService: UserService
+    private userService: UserService,
+    private tokenService:TokenService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -35,9 +37,9 @@ export class SeconnecterComponent implements OnInit {
   }
   onSubmitUser(): void {
     this.userService.signin(this.raconteForm.value).subscribe(
-      (data: any) => console.log(data),
-      (err: any) => console.log(err)
+      data => this.tokenService.saveToken(data.jwt),
+      err => console.log(err)
     );
-    console.log(this.raconteForm.value);
+    this.router.navigateByUrl('');
   }
 }
