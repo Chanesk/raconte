@@ -1,15 +1,16 @@
-import { Injectable } from "@angular/core";
+import { Injectable} from "@angular/core";
+import { Observable } from "rxjs";
 
 @Injectable({
     providedIn:'root'
 })
 export class TokenService {
+    test$!:Observable<any>
     saveToken(token:string):void{
         localStorage.setItem('token', token)
     }
 
-    isSining():boolean{
-        const token = localStorage.getItem('token')
-        return !! token
+    getToken():string | null{
+        return  localStorage.getItem('token')
     }
 }

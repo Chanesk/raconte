@@ -7,7 +7,7 @@
             <li class="navigation__list__element"><a routerLink="fiction">Fiction</a></li>
             <li class="navigation__list__element"><a routerLink="reel">Réel</a></li>
         </ul>
-        <button class="navigation__btn" (click)="onSeconnecter()">Se connecter</button>
+        <button *ngIf="token === null" class="navigation__btn" (click)="onSeconnecter()">Se connecter</button>
     </nav>
     <fa-icon [icon]="icon" class="header__icon" (click)="toggleDisplayNav()" *ngIf="isShowNav === true"></fa-icon>
     <fa-icon [icon]="faXmark" class="header__icon" (click)="toggleDisplayNav()" *ngIf="isShowNav === false"></fa-icon>
@@ -18,6 +18,6 @@
             <li class="navigation__responsive__list__element"><a href="#">Fiction</a></li>
             <li class="navigation__responsive__list__element"><a href="#">Réel</a></li>
         </ul>
-        <button class="navigation__responsive__btn">Se connecter</button>
+        <button *ngIf="token === null" class="navigation__responsive__btn">Se connecter</button>
     </nav>
 </header>
