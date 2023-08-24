@@ -14,6 +14,7 @@ export class RaconteListComponent implements OnInit{
 
   ngOnInit(): void {
    this.raconte$ =this.raconteService.getAllRacontes();
+   
   }
 
 }
