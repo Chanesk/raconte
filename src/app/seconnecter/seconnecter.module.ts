@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SeconnecterComponent } from './component/seconnecter/seconnecter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SeconnecterRoutingModule } from './seconnecter-routing.module';
 
 
 
@@ -9,7 +11,13 @@ import { SeconnecterComponent } from './component/seconnecter/seconnecter.compon
     SeconnecterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SeconnecterRoutingModule
+  ],
+  exports:[
+    ReactiveFormsModule
   ]
 })
 export class SeconnecterModule { }

@@ -35,6 +35,11 @@
                 padding: 10px;
                 margin-top: 20px;
             }
+            &>span{
+                color: red;
+                @include subtitle($size:12px);
+                width: 300px;
+            }
         }
         &__box{
             margin-bottom: 20px;

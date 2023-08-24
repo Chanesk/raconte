@@ -5,6 +5,7 @@ import { FictionArticleComponent } from './components/fiction-article/fiction-ar
 import { RaconteModule } from '../raconte/raconte.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DependanceModule } from '../dependance/dependance.module';
+import { FictionRoutingModule } from './fiction-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { DependanceModule } from '../dependance/dependance.module';
     CommonModule,
     RaconteModule,
     FontAwesomeModule,
-    DependanceModule
+    DependanceModule,
+    FictionRoutingModule
   ]
 })
 export class FictionModule { }

@@ -9,7 +9,7 @@ export class Raconte {
             };
         }
     };
-    title: string;
+    name: string;
     image: string;
     content: string;
     createdDate: Date;

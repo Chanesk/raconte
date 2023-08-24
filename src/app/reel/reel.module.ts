@@ -5,6 +5,7 @@ import { RaconteModule } from '../raconte/raconte.module';
 import { DependanceModule } from '../dependance/dependance.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReelArticleComponent } from './components/reel-article/reel-article.component';
+import { ReelRoutingModule } from './reel-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { ReelArticleComponent } from './components/reel-article/reel-article.com
     CommonModule,
     RaconteModule,
     DependanceModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReelRoutingModule
   ]
 })
 export class ReelModule { }

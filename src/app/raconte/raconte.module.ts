@@ -9,6 +9,7 @@ import { RaconteRecenteListComponent } from './components/raconte-recente-list/r
 import { RaconteThirdRecenteComponent } from './components/raconte-third-recente/raconte-third-recente.component';
 import { DependanceModule } from '../dependance/dependance.module';
 import { SingleRaconteComponent } from './components/single-raconte/single-raconte.component';
+import { RaconteRoutingModule } from './raconte-routing.module';
 
 
 
@@ -26,6 +27,7 @@ import { SingleRaconteComponent } from './components/single-raconte/single-racon
     CommonModule,
     FontAwesomeModule,
     DependanceModule,
+    RaconteRoutingModule
   ], 
   exports:[
     RaconteListComponent,

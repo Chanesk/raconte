@@ -4,9 +4,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
-import { HorreurPageModule } from './horreur-page/horreur-page.module';
-import { FictionModule } from './fiction/fiction.module';
-import { ReelModule } from './reel/reel.module';
 
 @NgModule({
   declarations: [
@@ -17,9 +14,6 @@ import { ReelModule } from './reel/reel.module';
     AppRoutingModule,
     CoreModule,
     LandingPageModule,
-    HorreurPageModule,
-    FictionModule,
-    ReelModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

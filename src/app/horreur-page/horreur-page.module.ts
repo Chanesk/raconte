@@ -5,6 +5,7 @@ import { HorreurArticleComponent } from './components/horreur-article/horreur-ar
 import { DependanceModule } from '../dependance/dependance.module';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import { RaconteModule } from '../raconte/raconte.module';
+import { HorreurRoutingModule } from './horreur-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RaconteModule } from '../raconte/raconte.module';
     CommonModule,
     DependanceModule,
     FontAwesomeModule,
-    RaconteModule
+    RaconteModule,
+    HorreurRoutingModule
   ],
   
 })
