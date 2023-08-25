@@ -4,19 +4,30 @@ import { registerLocaleData } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import * as fr from '@angular/common/locales/fr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import {HttpClientModule} from '@angular/common/http'
+import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    RouterModule,
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'fr-FR' }],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR' },
+  
+  ],
 })
 export class CoreModule {
   constructor(){

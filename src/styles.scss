@@ -18,7 +18,7 @@ $color-grey: #EEEDDE;
 $color-white:#fff;
 $color-another:#203239;
 $size-heading: 40px;
-$ize-title:22px;
+$size-title:22px;
 $size-body:16px;
 $size-cta:20px;
 $size-link:20px;
@@ -32,8 +32,9 @@ $mobil:600px;
 @mixin heading($size:$size-heading, $font:$typographie, $color:$color-primary){
     font-size: $size;
     font-family: $font;
+    color: $color;
 }
-@mixin title($size:$size-title, $font:$typographie, $color:$color-primary){
+@mixin title($size: $size-title, $font:$typographie, $color:$color-primary){
     font-size: $size;
     font-family: $font;
 }
@@ -45,6 +46,7 @@ $mobil:600px;
 @mixin body($size:$size-body, $font:$typo-sec, $color:$color-primary){
     font-size: $size;
     font-family: $font;
+    color: $color;
 }
 @mixin link($size:$size-link, $font:$typographie, $color:$color-primary){
     font-size: $size;
@@ -60,6 +62,16 @@ $mobil:600px;
     padding: 8px 16px;
     border-radius: 10px;
     background: $color;
+}
+@mixin buttonCat(){
+    border: 1px solid $color-secondary;
+    border-radius: 20px;
+    background-color: $color-white;
+    @include subtitle;
+    width: 74px;
+    text-align: center;
+    padding: 4px 8px;
+    font-weight: 700;
 }
 @mixin breakpoint($point){
     @if $point == tablette{

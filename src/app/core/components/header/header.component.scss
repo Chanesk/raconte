@@ -10,7 +10,7 @@
   @include breakpoint(mobil){
     padding: 20px;
   }
-    & > img {
+    & > a>img {
       height: 32px;
       width: 180px;
       object-fit: cover;
@@ -118,4 +118,8 @@
     }
   }
 }
-
+.active{
+  border-bottom: 1px solid $color-secondary;
+  font-weight: 700;
+  padding-bottom: 8px;
+}

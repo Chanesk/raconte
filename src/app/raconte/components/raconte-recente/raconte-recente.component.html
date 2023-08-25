@@ -1,0 +1,16 @@
+<div class="article" (click)="onViewRaconte()">
+    <div class="article__img">
+        <img [src]="raconte.attributes.image" alt="">
+    </div>
+    <p class="article__info">{{raconte.attributes.users_permissions_user.data.attributes.username}} - {{raconte.attributes.createdDate | date: 'd MMMM yyyy'}}</p>
+    <div class="article__content">
+        <div class="article__content__text">
+            <h3>{{raconte.attributes.name | truncate:[50]}}</h3>
+            <p >{{raconte.attributes.content | truncate:[180]}}</p>
+            <div>{{raconte.attributes.category.data.attributes.name}}</div>
+        </div>
+        <div class="article__content__icon">
+           <fa-icon [icon]="icon" class="article__content__icon__arrow"></fa-icon> 
+        </div>
+    </div>
+</div>
